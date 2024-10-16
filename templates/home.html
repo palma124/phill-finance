@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            <li><a href="{{ url_for('register') }}">Register</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Welcome to Your phillfinance Assistant <br>Your go-to tool for managing your finances.</h1>
+        
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Features</h2>
+            <ul>
+                <li>Track your expenses effortlessly.</li>
+                <li>Organize your spending by category.</li>
+                <li>Get insights into your financial habits.</li>
+                <li>Set and manage your budget goals.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Getting Started</h2>
+            <p>
+                <a class="button" href="{{ url_for('login') }}">Login</a> 
+                or 
+                <a class="button" href="{{ url_for('register') }}">Register</a> to get started!
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your phillfinance Assistant. All rights reserved.</p>
+    </footer>
+</body>
+</html>

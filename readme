@@ -1,0 +1,14 @@
+personal_finance_bot/
+│
+├── app.py
+├── models.py
+├── forms.py
+├── templates/
+│   ├── base.html
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   └── add_expense.html
+├── static/
+│   └── styles.css
+└── venv/
